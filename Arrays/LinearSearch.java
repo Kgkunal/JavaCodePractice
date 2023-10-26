@@ -1,25 +1,23 @@
 public class LinearSearch {
 
-    // function
-    public static int Kunal(int numbers[],int key){
-        for(int i=0;i<numbers.length;i++){
-            if(numbers[i]==key){
+    public static int LinerSearch(int number[],int key){
+
+        for(int i=0; i < number.length ; i++){
+            if(number[i]==key){
                 return i;
-            }else{
-                return -1;
             }
         }
-        return 0;
+        return -1;
+
     }
     public static void main(String args[]){
-
-        int numbers[]={1,2,3,4,5,6,7,8,9,10};
-        int key = 7;
-        int index = Kunal(numbers[10],key);
-        if(index==-1){
-            System.out.println("Not hold in array");
+        int number[] = {1,2,3,4,5,6,7,8,9,10};
+        int key = 5;
+        int index = LinerSearch(number, key);
+        if(index == -1){
+            System.out.println("Not Found");
         }else{
-            System.out.println(key + "Hold at index : "+index);
+            System.out.println("Key is at : "+ index + " " +"Position in Array");
         }
     }
 }
