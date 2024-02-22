@@ -3,7 +3,7 @@ public class Printnumfrom1to10 {
         System.out.println("Print number from 1 to 10");
         int num = 1;
         while(num<=10){
-            System.out.print(num+ " ");
+            System.out.print(num+ "\n");
             num++;
         }
     }
