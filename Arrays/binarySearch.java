@@ -6,6 +6,7 @@ public class binarySearch {
 
         while(start <= end){
             int mid = (start + end)/2;
+            System.out.println("value of mid here is = "+ mid);
 
             // comparisons
 
